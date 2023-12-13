@@ -1,0 +1,31 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+   padding: 0;
+   margin: 0;
+   background: linear-gradient(to left, rgba(238, 238, 238, 0), rgb(128, 128, 128));
+
+}
+
+.navbar{
+    width: 100%;
+    background-color: azure;
+    height: 50%;
+
+}
+.navbar-elements{
+}
+
+.navbar-elements .left{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.navbar-elements .right{
+    display: flex;
+    flex-direction: row;
+}

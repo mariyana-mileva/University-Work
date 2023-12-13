@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../CSS/portfolio-page-style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body id="body-section">
+    <!-- <header>
+        <div class="navigation">
+            <div class="navigation-links left">
+                <ul>
+                    <li class="hover-underline-animation"><a href="/HTML/home.html">Home</a></li>
+                    <li><a class="active" href="/HTML/portfolio-page.html">Portfolio</a></li>
+                    <li class="hover-underline-animation"><a href="/HTML/contact-me.html">Contact me</a></li>
+                </ul>
+            </div>
+
+            <div class="navigation-links right">
+                <ul>
+                    <li class="hover-underline-animation"><a href="">About</a></li>
+                </ul>
+            </div>        
+        </div>
+    </header> -->
+
+
+    <header>
+        <div id="sidebar" class="sidebar">
+            <!-- <p class="sidebar-title">Learning outcomes</p> -->
+            <a href="#" id="sidebar-close-button" class="close-sidebar-button">×</a>
+            <a href="../HTML/home.html">
+                <p class="hover-underline-animation">Home</p>
+            </a>
+            <a class="dropdown-menu" href="#">
+                <p class="hover-underline-animation">My work <i class="arrow"><img src="/Resources/dropdown.ico"
+                            alt=""></i></p>
+                </p>
+            </a>
+            <div class="dropdown-container">
+                <a href="/HTML/portfolio-page.html">
+                    <p class="hover-underline-animation">Subjects</p>
+                </a>
+                <a href="/HTML/ucd.html">
+                    <p class="hover-underline-animation">UX</p>
+                </a>
+                <a href="/HTML/fed.html">
+                    <p class="hover-underline-animation">Front-end</p>
+                </a>
+                <a href="/HTML/mp.html">
+                    <p class="hover-underline-animation">Media production</p>
+                </a>
+                <a href="/HTML/project.html">
+                    <p class="hover-underline-animation">Project</p>
+                </a>
+            </div>
+            <a href="../HTML/about-me.html">
+                <p class="hover-underline-animation">About me</p>
+            </a>
+            <a href="../HTML/contact-me.html">
+                <p class="hover-underline-animation">Contact</p>
+            </a>
+
+        </div>
+
+        <div class="sidebar-button">
+            <div id="sidebar-open-button" class="menu">menu</button>
+            </div>
+    </header>
+
+    <main id="main">
+        <div class="page-title">
+            <p>My work</p>
+        </div>
+        <div class="page-description">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum perferendis quos libero eum deserunt
+                aliquam illo incidunt ab exercitationem. Quidem asperiores repudiandae doloremque numquam a cupiditate
+                veritatis eum, quia officia?
+            </p>
+        </div>
+        <div class="page-content">
+            <div class="subjects-first-line">
+                <a id="ucd" href="/HTML/ucd.html">
+                    <div class="subject-card card-1">
+                        <div class="content">
+                            <p class="title">User-Centered Design</p>
+                        </div>
+                        <img src="/Resources/ucd-bg.jpg" alt="article-cover" />
+                    </div>
+                </a>
+
+                <a href="/HTML/fed.html">
+                    <div class="subject-card card-2">
+                        <div class="content">
+                            <p class="title">Front-end Development </p>
+                        </div>
+                        <img src="/Resources/fed-bg.png" alt="article-cover" />
+                    </div>
+                </a>
+
+                <a href="/HTML/mp.html">
+                    <div class="subject-card card-3">
+                        <div class="content">
+                            <p class="title">Media Production</p>
+                        </div>
+                        <img src="/Resources/mp-bg.jpeg" alt="article-cover" />
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="subjects-second-line">
+                <a href="/HTML/project.html">
+                    <div class="subject-card card-4">
+                        <div class="content">
+                            <p class="title">Project</p>
+                        </div>
+                        <img src="/Resources/group-project.jpg" alt="article-cover" />
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
+<script src="/JS/sidebar.js"></script>
+<script src="/JS/toggle-banner.js"></script>

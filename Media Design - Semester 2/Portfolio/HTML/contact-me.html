@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="/CSS/contact-me-style.css">
+</head>
+
+<body id="body-section">
+
+    <header>
+        <div class="navigation">
+
+            <div class="left">
+                <a class="hover-underline-animation" href="/HTML/home.html">Home</a>
+                <a class="hover-underline-animation" href="/HTML/ucd.html"> User-Centered Design</a>
+                <a class="hover-underline-animation" href="/HTML/mp.html">Media Production</a>
+                <a class="hover-underline-animation" href="/HTML/fed.html">Programming</a>
+                <a class="hover-underline-animation" href="/HTML/project.html">Project</a>
+                <a class="hover-underline-animation" href="/HTML/about-me.html">About</a>
+            </div>
+            <div class="right">
+                <a class="active" href="/HTML/contact-me.html">Contact me</a>
+            </div>
+        </div>
+    </header>
+   
+
+    <main>
+        <div class="content-box">
+            <div class="left-side">
+                <div class="title">
+                    <h1>CONTACT ME</h1>
+                </div>
+                <div class="based-in">
+                    <h4>Based in</h4>
+                    <p>Eindhoven, the Netherlands</p>
+                    <h4>Social Media</h4>
+                    <div class="contact-details">
+
+                        <div class="instagram">
+                            <a target="_blank" href="https://www.instagram.com/deva.mariq1/"><img
+                                    src="/Resources/insta.ico" alt=""></a>
+                        </div>
+                        <div class="facebook">
+                            <a target="_blank" href="https://www.facebook.com/devamariq2/"><img
+                                    src="/Resources/facebook.ico" alt=""></a>
+                        </div>
+                        <div class="git">
+                            <a target="_blank" href="http://git.fhict.nl/I482676/media-design-semester-2.git"><img src="/Resources/git.ico"
+                                    alt=""></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <form>
+                    <div class="personal-data">
+                        <div class="personal-data-input">
+                            <label for="fullName">Full name</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="" required>
+                        </div>
+
+                        <div class="personal-data-input">
+                            <label for="email">Email</label>
+                            <input class="data-text" type="text" name="email" placeholder="">
+                        </div>
+
+                    </div>
+                    <div class="message-box">
+                        <label for="message">Message</label>
+                        <input class="message" type="text" id="message" name="message" placeholder="Enter your message here" required></input>
+                    </div>
+
+
+                    <input type="submit" value="Submit">
+
+                </form>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+<script src="/JS/sidebar.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="/JS/automated-emails.js"></script>

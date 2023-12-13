@@ -1,0 +1,84 @@
+
+@keyframes redLight {
+    0%{background-color: red;}
+    100%{background-color: black;}
+}
+
+@keyframes yellowLight {
+    0%{background-color: yellow;}
+    100%{background-color: black;}
+}
+
+@keyframes greenLight {
+    from{background-color: green;}
+    to{background-color: black;}
+    
+}
+
+
+
+.assignment-image .div1 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 2%;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    animation-name: redLight;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-iteration-count: 1000;
+
+}
+
+.assignment-image .div2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 2%;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    animation-name: yellowLight;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-iteration-count: 1000;
+}
+
+.assignment-image .div3{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 2%;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    animation-name: greenLight;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-iteration-count: 1000;
+
+}
+
+.assignment-image .container {
+    display: inline-block;
+    position: absolute;
+    background-color: black;
+    width: 6.5%;
+    padding-left: 0.5%;
+    margin-left: 10%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin-top: 30%;
+
+}
+.assignment-image .streetlight{
+    margin-left: 10%
+}
+
+.assignment-image .stick{
+    position: absolute;
+    height: 210px;
+    width: 2%;
+    background-color: rgb(0, 0, 0);
+    margin-left: 12.5%;
+    margin-top: 65%;
+}

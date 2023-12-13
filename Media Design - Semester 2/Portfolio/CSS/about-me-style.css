@@ -1,0 +1,548 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 7.5%;
+  scroll-snap-type: y mandatory;
+  overflow-y: hidden;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+header .navigation {
+  padding: 2%;
+  padding-top: 3%;
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  white-space: nowrap;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  animation: opacityFadeIn 2s forwards;
+  align-items: center;
+
+
+}
+
+.navigation a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  transition: transform .2s;
+
+}
+
+.left .active{
+  border-bottom: 1px solid black;
+  transform: none;
+  font-size: 19px;
+}
+
+.left .active:hover{
+  transform: none;
+}
+
+.navigation a:hover{
+  transform: scale(1.2);
+}
+.left a:hover{
+  transform: scale(1.2);
+
+}
+
+.navigation .right {
+  text-align: right;
+  
+}
+.navigation .right a{
+  padding-bottom: 12%;
+
+}
+.navigation .left {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 5%;
+  white-space: nowrap;
+  width: 80%;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+.page-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  margin-top: 5%;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.page-content .text {
+  width: 40vw;
+  height: fit-content;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1.5%;
+}
+
+.page-content .text h1 {
+  margin-bottom: 8%;
+}
+.about-title {
+  position: relative;
+  opacity: 0;
+  animation: opacityFadeIn 1s forwards;
+  animation-delay: 1s;
+}
+
+.about-paragraph {
+  opacity: 0;
+  animation: opacityFadeIn 1s forwards;
+  animation-delay: 2s;
+}
+
+.about-title::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  top: 120%;
+}
+
+
+.why-ict-title {
+  opacity: 0;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  animation: opacityFadeIn 1s forwards;
+  animation-delay: 2.6s;
+}
+
+.why-ict-paragraph {
+  opacity: 0;
+  animation: opacityFadeIn 1s forwards;
+  animation-delay: 3s;
+  font-size: 16px;
+}
+
+.hobbies{
+  opacity: 0;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  animation: opacityFadeIn 1s forwards;
+  animation-delay: 3.4s;
+}
+
+.hobbies-paragraph{
+  opacity: 0;
+  animation: opacityFadeIn 1s forwards;
+  animation-delay: 3.8s;
+  font-size: 16px;
+
+}
+
+.page-content .image {
+  opacity: 0;
+  height: 80vh;
+  animation: opacityFadeIn 2s forwards;
+  animation-delay: 0.5s;
+}
+
+.page-content .image img {
+  height: 70vh;
+}
+/* .hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: aliceblue;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+header {
+  width: 100%;
+}
+
+.sidebar {
+  height: 100%; /* 100% Full-height 
+  width: 0; /* 0 width - change this with JavaScript 
+  position: fixed; /* Stay in place 
+  z-index: 1; /* Stay on top 
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden; /* Disable horizontal scroll
+  padding-top: 60px; /* Place content 60px from the top 
+  transition: 0.5s ease-out; /* 0.5 second transition effect to slide in the sidebar 
+}
+.sidebar a {
+  padding: 20px 8px 20px 62px;
+  text-decoration: none;
+  font-size: 25px;
+  color: aliceblue;
+  display: block;
+  transition: 0.3s;
+  width: fit-content;
+  font-family: "Roboto Mono", monospace;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .close-sidebar-button {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidebar .close-sidebar-button:hover {
+  color: #878787;
+}
+
+.sidebar-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 2%;
+  margin-left: 10%;
+  float: left;
+}
+
+.dropdown-menu {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.arrow img {
+  width: 16px;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 2px;
+  animation: rotateMenu 800ms ease-in-out forwards;
+  transform-origin: top center;
+}
+
+.dropdown-container a {
+  padding: 20px 8px 20px 62px;
+  text-decoration: none;
+  font-size: 20px;
+  color: aliceblue;
+  display: block;
+  transition: 0.3s;
+  width: fit-content;
+  font-family: "Roboto Mono", monospace;
+  white-space: nowrap;
+}
+
+.subjects {
+  position: absolute;
+  top: 0;
+  left: 440px;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  white-space: nowrap;
+  margin-top: 15%;
+  animation: opacityFadeIn 1.2s forwards;
+}
+
+.subjects a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #8e8e8e;
+  font-family: "Montserrat", sans-serif;
+}
+
+.subjects .active {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 2px black solid;
+  animation: none;
+}
+
+.subjects .active:hover {
+  animation: none;
+}
+
+.subjects a:hover {
+  animation: transforming 0.5s forwards;
+  color: black;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  position: relative;
+  color: #acabab;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  animation: opacityFadeIn 1.2s forwards;
+  user-select: none;
+}
+
+.menu:before {
+  content: "menu";
+  position: absolute;
+  color: #262626;
+  top: 0;
+  left: 0;
+  width: 0%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.menu:hover:before {
+  width: 100%;
+}
+
+.sidebar-open-button {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.sidebar-open-button:hover {
+  background-color: #444;
+}
+
+main {
+  width: 100%;
+  animation: opacityFadeIn 2s forwards;
+  margin-bottom: 7.5%;
+}
+
+.content-box {
+  width: 90%;
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  margin: auto;
+  margin-top: 7.5%;
+  margin-bottom: 7.5%;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-bottom: 8%;
+}
+
+.about-me {
+  width: 90%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 200px;
+  grid-row-gap: 0px;
+  margin-left: 10%;
+  margin-top: 8%;
+}
+
+.about-me .text {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-top: 27%;
+}
+
+.about-me .text h1 {
+  font-size: 38px;
+  /* border-bottom: 1px black solid; 
+  padding-bottom: 2%;
+}
+
+.about-me .text p {
+  margin-top: 10%;
+  font-size: 20px;
+}
+
+.about-me .image img {
+  width: 400px;
+  align-items: right;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.5);
+}
+
+.hobbies {
+  text-align: center;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.hobbies .text {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.hobbies h1 {
+  font-size: 38px;
+  font-family: "Montserrat", sans-serif;
+  /* border-bottom: 1px black solid; 
+  padding-bottom: 2%;
+}
+
+.hobbie-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 100px;
+  grid-row-gap: 0px;
+  margin-top: 2%;
+}
+
+.hobbie-1 .text {
+  margin-top: 15%;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.hobbie-2 .text {
+  margin-top: 25%;
+  font-family: "Montserrat", sans-serif;
+}
+.hobbie-1 .text h2 {
+  font-size: 32px;
+  border-bottom: 1px black solid;
+  padding-bottom: 2%;
+}
+
+.hobbie-1 .text p {
+  margin-top: 8%;
+  font-size: 20px;
+}
+
+.hobbie-1 .image img {
+  width: 500px;
+  align-items: left;
+  margin-top: 10%;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.5);
+}
+
+.hobbie-2 .image img {
+  width: 400px;
+  align-items: right;
+  margin-top: 10%;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.5);
+  margin-left: 20%;
+}
+
+.taekwondo {
+  margin-top: 30%;
+}
+
+.taekwondo-image img {
+  width: 450px;
+  margin-top: 20%;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.5);
+  margin-left: 10%;
+}
+
+.why-ict {
+  text-align: center;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+.why-ict .text h1 {
+  font-size: 38px;
+  font-family: "Montserrat", sans-serif;
+  /* border-bottom: 1px black solid; 
+  padding-bottom: 2%;
+}
+
+.why-ict .text p {
+  margin-top: 5%;
+  font-size: 24px;
+} */
+
+@keyframes opacityFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotateMenu {
+  0% {
+    transform: rotateX(-90deg);
+  }
+  70% {
+    transform: rotateX(20deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}

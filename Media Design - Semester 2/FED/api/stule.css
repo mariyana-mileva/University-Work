@@ -1,0 +1,15 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.response{
+    width: 100%;
+}
+
+.response #facts{
+    opacity: 0;
+    width: 30%;
+}
+
