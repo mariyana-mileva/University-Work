@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple 3D-Like Car</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #87CEEB;
+        }
+
+        .roof{
+            width: 200px;
+            height: 100px;
+            background-color: #FF6347;
+            border-radius: 10px;
+            position: relative;
+            transform: perspective(200px) rotateX(50deg);
+        }
+
+        .roof::before,
+        .roof::after {
+            content: '';
+            position: absolute;
+            background-color: #FF6347;
+        }
+
+        .roof::before {
+            width: 20px;
+            height: 80px;
+            top: 10px;
+            left: 20px;
+            border-radius: 5px;
+        }
+
+        .roof::after {
+            width: 20px;
+            height: 80px;
+            top: 10px;
+            right: 20px;
+            border-radius: 5px;
+        }
+
+        .back{
+            width: 200px;
+            height: 100px;
+            background-color: #FF6347;
+            border-radius: 10px;
+            position: relative;
+            transform: perspective(350px) rotateX(40deg) rotateY(-30deg);
+        }
+
+        .back::before,
+        .back::after {
+            content: '';
+            position: absolute;
+            background-color: #FF6347;
+        }
+
+        .back::before {
+            width: 20px;
+            height: 80px;
+            top: 10px;
+            left: 20px;
+            border-radius: 5px;
+        }
+
+        .back::after {
+            width: 20px;
+            height: 80px;
+            top: 10px;
+            right: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="back"></div>
+    <div class="roof"></div>
+  
+</body>
+</html>

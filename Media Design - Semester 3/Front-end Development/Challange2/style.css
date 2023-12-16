@@ -1,0 +1,301 @@
+/* CSS for the body element */
+
+body {
+  margin: 0; 
+  overflow: hidden;
+  background-color: rgb(245, 244, 244);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* CSS for the circle element */
+.circle {
+  width: 360px;
+  height: 360px;
+  border-radius: 1000px;
+  animation: fadeInCircle 0.1s ease-in-out forwards;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 9.1%;
+  left: 9%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5), /* Apply box shadow */
+    inset 0px 0px 20px rgba(0, 0, 0, 0.5); /* Apply inner shadow */
+}
+
+
+/* CSS for the 'cont' element */
+#cont {
+    opacity: 0;
+  position: absolute;
+  left: 559px;
+  top: 80px;
+  width: 420px;
+  height: 420px;
+  background: -webkit-linear-gradient( /* Apply linear gradient background */
+    left top,
+    rgb(174, 174, 174) 0%,
+    rgb(223, 223, 223) 100%
+  );
+  border-radius: 1000px; /* Create a circular shape */
+  padding: 10px;
+  animation: rotateCircle 1.5s linear 2, fadeInCircle 1.5s ease-in-out forwards;  /* Add the rotateCircle animation */
+  animation-delay: 1.2s;
+}
+
+
+/* CSS for the 'ea-sports-intro' element */
+
+.ea-sports-intro {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-size: 200px;
+  color: #fff;
+  perspective: 800px; /* Set perspective for 3D effect */
+  align-items: center;
+  margin-top: -150px;
+}
+
+/* CSS for letter containers */
+.letter-container,
+.text-container {
+  display: flex;
+  flex-direction: row;
+  perspective: 200px;
+
+}
+
+/* CSS for individual letters */
+.letter {
+  opacity: 0;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out; /* Set animation timing function */
+  animation-fill-mode: forwards; /* Keep final animation state */
+  transform-origin: center; /* Set transformation origin */
+  transform: translateZ(-1000px); /* Apply 3D translation */
+  margin-right: -1.9rem;
+  font-weight: bold;
+  color: #c12033; 
+}
+
+/* CSS for specific letters 'e' and 'a' */
+
+.e {
+  animation-name: fadeAndMoveE;
+}
+
+.a {
+  animation-name: fadeAndMoveA;
+  animation-delay: 0.5s;
+}
+ 
+/* CSS for text elements */
+
+.text {
+  margin-left: 35px;
+  opacity: 0;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transform-origin: center;
+  transform: translateZ(-100px);
+  font-size: 59px;
+  color: #0f327b;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+}
+
+/* CSS for the 'sports' class */
+
+.sports {
+  animation-name: fadeAndMoveA;
+  animation-delay: 0.8s;
+  margin-top: -3rem;
+}
+
+/* CSS for the 'bottom-text-container' class within 'container' */
+.container .bottom-text-container{
+    font-weight: bold;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 90px;
+    left: 559px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+
+/* CSS for 'bottom-text' class */
+
+.bottom-text{
+    font-size: 32px;
+}
+
+
+/* CSS for 'bottom-text2' class */
+
+.bottom-text2{
+    opacity: 0;
+    animation: fadeInCircle 0.5s forwards;
+    animation-delay: 3.5s;
+    font-size: 20px;
+    color: rgb(116, 116, 116);
+}
+
+
+/* CSS for span within the 'bottom-text' class */
+
+.bottom-text span{
+  opacity: 0;
+  animation: fadeInFromLeft 0.1s ease-in-out forwards;
+  animation-delay: calc(1s * var(--index));  /* Delay animation based on index */
+}
+
+/* CSS for spans with specific index values */
+.bottom-text span:nth-child(1) {
+  --index: 2.1; /* Set custom index value */
+}
+
+.bottom-text span:nth-child(2) {
+  --index: 2.20;
+}
+
+.bottom-text span:nth-child(3) {
+  --index: 2.31;
+}
+.bottom-text span:nth-child(4) {
+  --index: 2.41;
+}
+.bottom-text span:nth-child(5) {
+  --index: 2.52;
+}
+.bottom-text span:nth-child(6) {
+  --index: 2.63;
+}
+.bottom-text span:nth-child(7){
+  --index: 2.77;
+}
+.bottom-text span:nth-child(8) {
+  --index: 2.88;
+}
+.bottom-text span:nth-child(9) {
+  --index: 2.99;
+}
+
+.bottom-text span:nth-child(10){
+  --index: 3;
+}
+.bottom-text span:nth-child(11) {
+  --index: 3.1;
+}
+.bottom-text span:nth-child(12) {
+  --index: 3.2;
+}
+
+/* CSS for the 'play-again' and 'toggleColorButton' buttons */
+
+#play-again, #toggleColorButton{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+     background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* CSS for the 'toggleColorButton' button */
+
+#toggleColorButton{
+    top: 60px;
+}
+
+/* CSS for the 'inverted' class, used for color inversion */
+.inverted {
+    filter: invert(1);
+  }
+  
+
+/*                                         KEYFRAMES                                    */
+/* #################################################################################### */
+
+
+
+/* Keyframes for fading and moving the letter 'E' */
+@keyframes fadeAndMoveE {
+    0% {
+      opacity: 0; /* Start with no opacity (invisible) */
+      transform: translateZ(1200px); /* Start 1200px away */
+    }
+    100% {
+      opacity: 1; /* End with full opacity (visible) */
+      transform: translateZ(0); /* End at the original position */
+    }
+  }
+  
+  /* Keyframes for fading and moving the letter 'A' */
+  @keyframes fadeAndMoveA {
+    0% {
+      opacity: 0; /* Start with no opacity (invisible) */
+      transform: translateZ(700px); /* Start 700px away */
+    }
+    100% {
+      opacity: 1; /* End with full opacity (visible) */
+      transform: translateZ(0); /* End at the original position */
+    }
+  }
+  
+  /* Keyframes for fading in a circle element */
+  @keyframes fadeInCircle {
+    0% {
+      opacity: 0; /* Start with no opacity (invisible) */
+    }
+    100% {
+      opacity: 1; /* End with full opacity (visible) */
+    }
+  }
+  
+  /* Keyframes for rotating a circle element */
+  @keyframes rotateCircle {
+    0% {
+      transform: rotate(0deg); /* Start with no rotation */
+    }
+    100% {
+      transform: rotate(360deg); /* End with full rotation (360 degrees) */
+    }
+  }
+  
+  /* Keyframes for expanding a circle element */
+  @keyframes expand {
+    0% {
+      width: 360px; /* Start with a width of 360px */
+      height: 360px; /* Start with a height of 360px */
+    }
+    100% {
+      width: 420px; /* End with a width of 420px */
+      height: 420px; /* End with a height of 420px */
+    }
+  }
+  
+  /* Keyframes for fading in from the left */
+  @keyframes fadeInFromLeft {
+    0% {
+      opacity: 0; /* Start with no opacity (invisible) */
+      transform: translateX(-100%); /* Start 100% to the left */
+    }
+    100% {
+      opacity: 1; /* End with full opacity (visible) */
+      transform: translateX(0); /* End at the original position */
+    }
+  }
+  

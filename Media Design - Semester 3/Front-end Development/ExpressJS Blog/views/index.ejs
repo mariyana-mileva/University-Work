@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog Home</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/ExpressJS Blog/public/styles/style.css">
+
+
+</head>
+
+<body style="margin: 10px">
+   
+    <!-- Button to create a new post -->
+    <h1 class="d-flex justify-content-center">All Posts</h1>
+
+    <div class="d-flex flex-row justify-content-center "> 
+        <a href="/blogs/new"><button type="button" class="btn btn-primary">Create new post</button></a>
+        <a href="#" class="pl-2"><button type="button" id="sortButton" class="btn btn-info">Sort: Newest first</button></a>
+    </div>
+    
+    <!-- Button to toggle sorting order -->
+    
+    <div class="album py-5 bg-light">
+        <!-- Loop through each blog post and display it -->
+        <% posts.forEach(post=> { %>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <!-- Display the title of the post -->
+                        <h2 class="card-text">
+                            <%= post.title %>
+                        </h2>
+                        <!-- Display the content of the post -->
+                        <p>
+                            <%= post.content %>
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <!-- Buttons for viewing and editing the post -->
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <!-- Display the timestamp when the post was created -->
+                            <small class="text-muted">Posted on: <%= post.created_at %></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <% }) %>
+    </div>
+    </div>
+
+</body>
+
+</html>
+<!-- Include jQuery for JavaScript functionality -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Event listener for the button click
+        $('#sortButton').on('click', function (event) {
+            // Prevent the default behavior of the button click
+            event.preventDefault();
+
+            // Read the current button text
+            const buttonText = $(this).text();
+
+            // Determine the current sorting order based on the button text
+            const currentOrder = buttonText.includes('Oldest first') ? 'asc' : 'desc';
+
+            // Toggle the sorting order
+            const newOrder = currentOrder === 'asc' ? 'desc' : 'asc';
+
+            // Fetch the updated content without a full page reload
+            $.get(`/blogs/sort?sortOrder=${newOrder}`, function (data) {
+                // Replace the current content with the updated content
+                $('body').html(data);
+
+                // Log for debugging and update the button text
+                console.log(`Setting text to: Sort: ${newOrder === 'asc' ? 'Oldest first' : 'Newest first'}`);
+                $('#sortButton').text(`Sort: ${newOrder === 'asc' ? 'Oldest first' : 'Newest first'}`);
+            });
+        });
+    });
+
+</script>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Weather App</h1>
+
+    <!-- Container for weather information -->
+    <div class="container" id="container">
+        <div class="weather-info">
+            <h2 id="cityName"></h2> <!-- Display the city name -->
+            <h2>Temperature</h2>
+            <div class="temp-container">
+                <p id="temperature">0</p> <!-- Display temperature -->
+                <p id="feels-like">0</p> <!-- Display "feels like" temperature -->
+                <p id="humidity">0</p> <!-- Display humidity level -->
+            </div>
+            <h2>Weather</h2>
+            <div class="weather-container"> 
+                <p id="weatherDescription">0</p> <!-- Display weather description -->
+                <img id="weatherIcon" src="#" alt=""> <!-- Display weather icon -->
+            </div>
+            <h2>Wind</h2>
+            <p id="windSpeed">0</p> <!-- Display wind speed -->
+        </div>
+        <div class="change-city">
+            <h1>Change City</h1> 
+            <input type="text" id="newCity" placeholder="Enter a city name"> <!-- Input for entering a new city name -->
+            <button id="changeCityBtn">Change City</button> <!-- Button to change the city -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess The Number Game</title>
+</head>
+<body>
+    <div class="start-menu" id="start-menu">
+        <h1>Welcome to Guess the number game!</h1>
+        <div class="start-menu-buttons">
+            <button class="start-button" id="start-button">Start</button>
+            <button class="info-button" id="info-button">Info</button>
+        </div>
+    </div>
+    <div class="info" id="info">
+        <h2>Objective:</h2>
+        <p>Guess the secret number correctly within a limited number of attempts.</p>
+        <h2>How to Play:</h2>
+        <ul>
+            <li><p>The game randomly selects a secret number between a predefined range (e.g., 1 to 100).</p></li>
+            <li><p>You have a limited number of attempts (e.g., 10) to guess the secret number.</p></li>
+            <li><p>After each guess, the game will provide feedback, telling you if your guess is too high or too low.</p></li>
+            <li><p>Keep guessing until you find the secret number or run out of attempts.</p></li>
+        </ul>
+        <h2>Winning:</h2>
+        <p>You win by guessing the secret number correctly within the allotted attempts. Good luck!</p>
+        <button class="back-button" id="back-button">Back to main menu</button>
+    </div>
+
+    <div class="add-player" id="add-player">
+        <h2 id="player-number">Add Player 1</h2>
+        <div id="add-player-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="occupation">Occupation:</label>
+                <input type="text" id="occupation" name="occupation" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country of Residence:</label>
+                <select id="country" name="country" required></select>
+            </div>
+            <div class="form-group">
+                <button class="add-player-btn" id="add-player-btn">Add Player</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="game-ui" id="game-ui" >
+        <h1>Guess the Number</h1>
+        <div class="player-panel">
+            <div class="player">
+                <h2 id="player-1-name">Player 1</h2>
+                <p id="countryOfRes"></p>
+                <p id="playerOccupation"></p>
+                <p>Lives: <span id="player-1-lives">0</span></p>
+                <input type="number" id="player-1-guess" placeholder="Enter your guess">
+                <button id="player1-guess-btn">Guess</button>
+            </div>
+            <div class="player">
+                <h2 id="player-2-name">Player 2</h2>
+                <p id="countryOfResPlayer2"></p>
+                <p id="playerOccupationPlayer2"></p>
+                <p>Lives: <span id="player-2-lives">0</span></p>
+                <input type="number" id="player-2-guess" placeholder="Enter your guess">
+                <button id="player2-guess-btn">Guess</button>
+            </div>
+        </div>
+        <div class="result">
+            <h2>Game Result</h2>
+            <p id="result-text">Waiting for guesses...</p>
+        </div>
+        <button class="start-over" id="start-over-button">Start Over</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

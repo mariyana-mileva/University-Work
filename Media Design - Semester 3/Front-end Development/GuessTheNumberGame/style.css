@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&family=PT+Mono&family=Poppins:wght@300;400&family=Roboto+Mono:wght@300&family=Titillium+Web:wght@300&display=swap");
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+.start-menu {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.start-menu h1 {
+  font-size: 42px;
+  text-align: center;
+  width: 40%;
+}
+
+.info {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  margin-top: 2%;
+}
+
+.start-menu .start-menu-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 40%;
+  margin-right: 6.5%;
+  margin-top: 5%;
+}
+.start-menu .start-menu-buttons button {
+  font-size: 32px;
+  font-family: "Poppins", sans-serif;
+}
+
+.start-button {
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #45a049;
+}
+
+.info-button,
+.back-button {
+  padding: 12px 24px;
+  background-color: #008cba;
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.info-button:hover,
+.back-button:hover {
+  background-color: #0073a0;
+}
+
+.back-button {
+  margin-top: 2%;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.add-player {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  margin-top: 5%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-player-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-player-btn:hover {
+  background-color: #45a049;
+}
+
+
+.game-ui {
+    display: none;
+    flex-direction: column;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 70%;
+    font-family: "Poppins", sans-serif;
+}
+
+.game-ui h1 {
+    margin-bottom: 20px;
+}
+
+.player-panel {
+    display: flex;
+    gap: 5%;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.player {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.player h2 {
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+button {
+    display: flex;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    background-color: #f9f9f9;
+    padding-left: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.result h2 {
+    margin-bottom: 10px;
+    color: rgb(37, 37, 37);
+}
+
+#result-text {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.start-over{
+    display: none;
+    margin-top: 2%;
+    
+}
