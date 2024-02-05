@@ -1,0 +1,12 @@
+C:\Users\milev\OneDrive\Desktop\Project-individual\Online-shop\Online-shop\Entities\bin\Release\net6.0\Entities.deps.json
+C:\Users\milev\OneDrive\Desktop\Project-individual\Online-shop\Online-shop\Entities\bin\Release\net6.0\Entities.dll
+C:\Users\milev\OneDrive\Desktop\Project-individual\Online-shop\Online-shop\Entities\bin\Release\net6.0\Entities.pdb
+C:\Users\milev\OneDrive\Desktop\Project-individual\Online-shop\Online-shop\Entities\obj\Release\net6.0\Entities.csproj.AssemblyReference.cache
+C:\Users\milev\OneDrive\Desktop\Project-individual\Online-shop\Online-shop\Entities\obj\Release\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\milev\OneDrive\Desktop\Project-individual\Online-shop\Online-shop\Entities\obj\Release\net6.0\Entities.AssemblyInfoInputs.cache
+C:\Users\milev\OneDrive\Desktop\Project-individual\Online-shop\Online-shop\Entities\obj\Release\net6.0\Entities.AssemblyInfo.cs
+C:\Users\milev\OneDrive\Desktop\Project-individual\Online-shop\Online-shop\Entities\obj\Release\net6.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\milev\OneDrive\Desktop\Project-individual\Online-shop\Online-shop\Entities\obj\Release\net6.0\Entities.dll
+C:\Users\milev\OneDrive\Desktop\Project-individual\Online-shop\Online-shop\Entities\obj\Release\net6.0\refint\Entities.dll
+C:\Users\milev\OneDrive\Desktop\Project-individual\Online-shop\Online-shop\Entities\obj\Release\net6.0\Entities.pdb
+C:\Users\milev\OneDrive\Desktop\Project-individual\Online-shop\Online-shop\Entities\obj\Release\net6.0\ref\Entities.dll

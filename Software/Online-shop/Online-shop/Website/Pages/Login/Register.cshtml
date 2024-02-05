@@ -1,0 +1,52 @@
+﻿@page "/Register"
+@model Website.Pages.Login.RegisterModel
+@{
+    Layout = "_Login";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="/css/register.css"/>
+    
+
+}
+
+<section class="text-center">
+    <main class="form-signin w-100 m-auto">
+        <form method="post">
+            <img class="mb-4" src="/Images/logo.png" alt="" width="144" height="114">
+            <h1 class="h3 mb-3 fw-normal">Sign up form</h1>
+
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="FirstName">
+                <label asp-for="fname">First Name</label>
+                <span asp-validation-for="fname"></span>
+              
+            </div>
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="LastName">
+                <label asp-for="lname">Last Name</label>
+                <span asp-validation-for="lname"></span>
+            </div>
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label asp-for="email">Email address</label>
+                <span asp-validation-for="email"></span>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label asp-for="password">Password</label>
+                <span asp-validation-for="password"></span>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="RepPassword">
+                <label asp-for="repPassword">Repeat password</label>
+                <span asp-validation-for="repPassword"></span>
+            </div>
+            <p class="text-danger">@Model.msg</p>
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+        </form>
+    </main>
+</section>

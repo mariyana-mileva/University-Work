@@ -1,0 +1,10 @@
+C:\Users\Lenovo\source\repos\Group-project-searching\Group-project-searching\bin\Debug\Group-project-searching.exe.config
+C:\Users\Lenovo\source\repos\Group-project-searching\Group-project-searching\bin\Debug\Group-project-searching.exe
+C:\Users\Lenovo\source\repos\Group-project-searching\Group-project-searching\bin\Debug\Group-project-searching.pdb
+C:\Users\Lenovo\source\repos\Group-project-searching\Group-project-searching\obj\Debug\Group-project-searching.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\Group-project-searching\Group-project-searching\obj\Debug\Group_project_searching.Form1.resources
+C:\Users\Lenovo\source\repos\Group-project-searching\Group-project-searching\obj\Debug\Group_project_searching.Properties.Resources.resources
+C:\Users\Lenovo\source\repos\Group-project-searching\Group-project-searching\obj\Debug\Group-project-searching.csproj.GenerateResource.cache
+C:\Users\Lenovo\source\repos\Group-project-searching\Group-project-searching\obj\Debug\Group-project-searching.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\Group-project-searching\Group-project-searching\obj\Debug\Group-project-searching.exe
+C:\Users\Lenovo\source\repos\Group-project-searching\Group-project-searching\obj\Debug\Group-project-searching.pdb
